@@ -1,15 +1,159 @@
-{{!-- 
-Це код container файлу для index сторінки, 
+{{!--
+Це код container файлу для index сторінки,
 в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
- --}}
+--}}
+{{!--
+<style>
+    h1 {
+        color: #000;
+    }
+</style>
 
-<div class="p-5">
-    <h1>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+<div class="box p-5">
+    <h1 style="color:yellow">USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+    <h1 id="user">USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h1>
+    <h2>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h2>
+    <h3>USB хаб Type C 12 в 1 HDMI VGA AUX 3.5 mm</h3>
 
     <button type="button" class="btn btn-primary">Купити</button>
-</div>
 
-{{!-- 
-    Цей код містить лише те, що буде виводитись в <body>
+    <p>This is text</p>
+</div>--}}
+
+{{!--
+Цей код містить лише те, що буде виводитись в
+
+<body>
     Адже наш layout/default.hbs має вже структуру HTML
---}}
+    --}}
+
+
+    {{!--LESSON 2--}}
+
+    {{!-- <div class="card p-5 m-5 card-dark">
+        <ul>
+            <li class="item">1</li>
+            <li class="item">2</li>
+            <li class="item">3</li>
+            <li class="item">4</li>
+        </ul>
+    </div>
+    <div class="card p-5 m-5 card-dark">
+
+        <p class="item">1</p>
+        <strong class="item">2</strong>
+        <p class="item">3</p>
+        <b class="item">4</b>
+        <p class="item">1</p>
+        <li class="item">2</li>
+        <p class="item">3</p>
+        <strong class="item">4</strong>
+
+    </div>
+    <div class="card p-5 m-5 card-dark">
+
+        <p></p>
+        <strong class="item">2</strong>
+        <p class="item">3</p>
+        <b class="item">4</b>
+        <p class="item">1</p>
+        <li class="item">2</li>
+        <p></p>
+        <strong class="item">4</strong>
+
+    </div>
+    --}}
+
+    {{!--LESSON 3--}}
+
+    {{!--<div class="card p-5 m-5 card-dark">
+        <input class="input-dark" required>
+        <input class="input-dark" type="number">
+
+    </div>
+
+    <div class="card p-5 m-5 card-dark img">
+        <img src="https://picsum.photos/200/300" height="100px" class="small-img" alt="image small card 100px">
+
+        <a href="https://picsum.photos/200/300" rel="external">Link</a>
+
+        <button class="btn">Click me</button>
+    </div>
+
+    <div class="card p-5 m-5 card-dark img">
+        <img src="https://picsum.photos/200/300" height="100px" class="small-img" alt="image small card 100px">
+
+        <a href="https://picsum.photos/200/300" rel="external">Link</a>
+
+        <a class="btn btn-secondary" href="https://picsum.photos/200/300">Click me</a>
+    </div>
+
+    <div class="card p-5 m-5 card-dark img">
+        <img src="https://picsum.photos/200/300" height="100px" class="small-img" alt="image small card 100px">
+
+        <a href="https://picsum.photos/200/300" rel="external">Link</a>
+
+        <a class="small btn btn-secondary big" href="https://picsum.photos/200/300">Click me</a>
+    </div>
+
+    <div class="card p-5 m-5 card-dark">
+        <p class="big-text">
+            gfujtdturs lkuyoitu liyoiyu csrhuiu <br> bnhgj kjhlfglkhf bvchktgcdkhgtcx jgckgckhgckljgc jgcgjcklgcljghvhg
+            xxcgbujkghb
+        </p>
+    </div>
+
+    <div class="card p-5 m-5 card-dark">
+        <input class="input-dark" placeholder="This is text" required>
+    </div> --}}
+
+    {{!--LESSON 4--}}
+
+    <div class="card p-5 m-5 card-dark">
+        <a class="link" href="https://www.google.com/se">Click me</a>
+    </div>
+
+    <div lang="fr" id="test" class="card p-5 m-5 card-dark">
+        Якір
+        <span> Hello</span>
+    </div>
+    <div lang="en" id="test" class="card p-5 m-5 card-dark">
+        <input>
+    </div>
+    <div lang="en" id="test" class="p-5 m-5 card-dark">
+
+        <button>Test button</button>
+        <button disabled>Disabled button</button>
+    </div>
+    <div class="card p-5 m-5 card-dark">
+        <input class="inp">
+    </div>
+    <div class="card p-5 m-5 ">
+        <input class="inp" disabled>
+
+        <div class="mt-5">
+            <div>
+                <input type="checkbox" checked>
+                <span>first</span>
+            </div>
+            <div>
+                <input type="checkbox">
+                <span>second</span>
+            </div>
+
+        </div>
+    </div>
+    <div class="p-5 m-5 card-dark">
+
+        <input type="email" required class="valid">
+    </div>
+     <div class="p-5 m-5 card-dark">
+
+       <div>
+         <input type="email" required class="valid" placeholder="test">
+         <span>Test text</span>
+         </div>
+         <div class="mt-5">
+         <input type="number" min="10" max="20" value="0" required class="number">
+         </div>
+    </div>
