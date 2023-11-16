@@ -1,0 +1,200 @@
+/*
+:root {
+  background:purple;
+
+}
+
+html {
+  max-width: 720px;
+}
+
+body {
+  background: #fff;
+}
+
+*{
+  color:red;
+}
+
+h1  {
+  color: green;
+}
+.box{
+  background: #cfcfcf;
+}
+#user{
+  color: blue;
+}
+h2, h3, button{ 
+  color: green;
+}
+div > p {
+  color: rgb(101, 59, 136);
+}*/
+
+
+.card-dark {
+  background: rgb(248, 244, 244);
+
+}
+
+.item {
+  color: green;
+}
+
+.item:first-child {
+  color: blue;
+}
+
+.item:last-child {
+  color: rgb(219, 31, 47);
+}
+
+.item:nth-child(2) {
+  color: aqua;
+}
+
+.item:last-of-type {
+  color: blueviolet;
+}
+
+.item:only-of-type {
+  color: red;
+}
+
+.item:nth-child(3) {
+  background: yellow;
+}
+
+p:not(.item) {
+  background: red;
+}
+
+.item:not(strong) {
+  background: brown;
+}
+
+p:empty {
+  height: 10px;
+  background: green;
+}
+
+/*LESSON 3*/
+.input-dark {
+  background: rgb(180, 155, 155);
+
+}
+
+.input-dark[required] {
+  background: red;
+
+}
+
+.input-dark[type="number"] {
+  background: rgb(9, 255, 0);
+
+}
+
+.small-img[alt~="small"] {
+  height: 500px;
+}
+
+a[rel~='external'] {
+  color: green;
+}
+
+button[class|='btn'] {
+  background: yellow;
+}
+
+a[class^='btn'] {
+  background: rgb(207, 38, 16);
+}
+
+a[class*='btn'] {
+  background: rgb(207, 38, 16);
+}
+
+a[class$='big'] {
+  background: rgb(41, 25, 185);
+}
+
+.btn::first-letter {
+  color: red;
+}
+
+.big-text::first-line {
+  color: blue;
+}
+
+.input-dark::placeholder {
+  color: green;
+}
+
+.big-text::before,
+.big-text::after {
+  content: "$$$";
+  color: green;
+}
+/* LESSON 4*/
+#test:target {
+  color: red;
+}
+.link:link{
+  color: red;
+}
+.link:hover{
+  color: green;
+}
+
+.link:active{
+  color: purple;
+}
+.card:active{
+  background-color: purple;
+}
+input{
+  background-color: gray;
+}
+input:focus{
+  background-color: red;
+}
+.card:focus-within{
+  background: red;
+}
+.card:lang(fr)>span::after{
+  content:  '( fr)';
+  background-color: aqua;
+}
+button{
+  background-color: gold;
+}
+button:enabled{
+  background-color: blue;
+}
+.inp:read-write{
+  background-color: aqua;
+}
+input[type="checkbox"]:checked ~ span{
+  background: green;
+  }
+  .valid:valid{
+    background: yellow;
+  }
+  .valid:invalid{
+    background: rgb(217, 231, 16);
+  }
+  .valid:optional{
+    background: rgb(10, 250, 10);
+  }
+  .namber:focus{
+    background-color: gray;
+  }
+  .number:out-of-range{
+    background-color: red;
+  }
+  .number:in-range{
+    background-color: green;
+  }
+  input:placeholder-shown ~ span{
+    background-color: pink;
