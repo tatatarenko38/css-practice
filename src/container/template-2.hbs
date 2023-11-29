@@ -1,11 +1,11 @@
 <div class="page">
     <div class="page_content">
         <div class="page_block">
-            <header class="header row g-0">
-                <div class="col-3">
+            <header class="header">
+                <div class="">
                     {{> logo}}
                 </div>
-                <nav class="header_nav col-9 ">
+                <nav class="header_nav">
                     <div class="header_nav_right">
                         {{> nav list=header}}
                     </div>
@@ -23,9 +23,9 @@
             </div>
         </div>
         <div class="page_block">
-            <div class="row g-4">
+            <div class="flex_container">
                 {{#each preview}}
-                <div class="col-6">
+                <div class="flex-item">
                     {{> cardPreview data=this}}
                 </div>
                 {{/each}}
@@ -34,14 +34,14 @@
         </div>
         <div class="page_block">
             <main class="main">
-                <div class="row g-0">
-                    <div class="col-12">
+                <div >
+                    <div >
                         <div class="list_header">
-                            <div class="row g-0">
-                                <div class="col-6">
+                           
+                                <div class="">
                                     <h2 class="list_title">List of posts</h2>
                                 </div>
-                                <div class="col-6">
+                                <div class="">
                                     <div class="category_list">
                                         {{#each categories}}
                                         <button class="category_button">{{text}}</button>
@@ -49,7 +49,7 @@
                                     </div>
 
                                 </div>
-                            </div>
+                           
                         </div>
                     </div>
                     <div class="col-7">
@@ -76,13 +76,13 @@
         </div>
         <div class="page_block">
 
-            <footer class="row  g-0 footer">
-                <div class="col-3">
+            <footer class="footer">
+                <div >
                     {{> logo}}
                     <span class="footer_copytight">Copyright 2023-2024</span>
                 </div>
                 {{#each footer}}
-                <div class="col-3">
+                <div >
                     <span class="footer_title">{{title}}</span>
                     {{> nav list=links isVertical="true"}}
                 </div>
