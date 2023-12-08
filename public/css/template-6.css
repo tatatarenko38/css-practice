@@ -221,7 +221,7 @@
 
 .expirience {
     display: flex;
-
+  
     gap: var(--space-l);
     padding: 24px 28px;
     align-items: flex-start;
@@ -233,7 +233,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
+    }
 
 .expirience_title {
     color: var(--color-title);
@@ -254,7 +254,7 @@
     gap: 12px;
     border-radius: 70px;
     background: #FF7347;
-}
+ }
 
 
 
