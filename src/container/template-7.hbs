@@ -1,0 +1,65 @@
+<header class="header">
+    {{#with header}}
+    <div class="header1">
+        <div class="logo1">
+            <span class="badge text-bg-primary">{{brandName}}</span>
+        </div>
+        <div class="header_nav">
+            {{#each links}}
+            <a class="nav_link" href="{{url}}">{{text}}</a>
+            {{/each}}
+        </div>
+    </div>
+
+    <div class="header2">
+        <div class="ad">
+            <div class="logo2">
+                <span class="badge text-bg-primary">Ad</span>
+            </div>
+            <div class="ad_text">{{ad.text}}: {{ad.url}}</div>
+        </div>
+        <div class="user">Users online:{{ userOnline}}</div>
+
+    </div>
+    {{/with}}
+</header>
+
+{{#with hero}}
+<main class="hero">
+    <h1 class="hero_title">{{title}}</h1>
+    <p class="hero_description">{{description}}</p>
+    <a href="{{button.url}}" class="button button_hero">{{button.text}}</a>
+</main>
+{{/with}}
+
+<div class="about">
+    <strong class="about_heading">{{about.heading}}</strong>
+    <p class="about_info">{{about.info}}</p>
+</div>
+
+<div class="articles">
+    <div class="articles_title">
+        <div>
+            <h2 class="articles_title_our">Our Articles</h2>
+        </div>
+        <div>
+            <a href="#" class="button button_articles">View All</a>
+        </div>
+    </div>
+
+    <div class="articles_card">
+        {{#each articles}}
+
+        <div>
+            <div>
+                <img class="articles_card_img" src="{{photo}}">
+
+            </div>
+            <strong class="articles_card_name">{{name}}</strong>
+            <p class="articles_card_description">{{description}}</p>
+            <a href="#" class="button articles_card_button">Read All</a>
+
+        </div>
+        {{/each}}
+    </div>
+</div>
