@@ -473,6 +473,27 @@ router.get('/template-3', function (req, res) {
         button: "View details",
         href: "https://example.com/",
         img: "https://picsum.photos/140/140"
+      },
+      {
+        title: "Latest post",
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content",
+        button: "View details",
+        href: "https://example.com/",
+        img: "https://picsum.photos/140/140"
+      },
+      {
+        title: "Featured story",
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content",
+        button: "View details",
+        href: "https://example.com/",
+        img: "https://picsum.photos/140/140"
+      },
+      {
+        title: "Popular post",
+        text: "This is a wider card with supporting text below as a natural lead-in to additional content",
+        button: "View details",
+        href: "https://example.com/",
+        img: "https://picsum.photos/140/140"
       }
     ],
 
@@ -771,6 +792,18 @@ router.get('/template-5', function (req, res) {
     },
 
     advantages: [
+      {
+        title: "24/7 Availability",
+        text: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the."
+      },
+      {
+        title: "10 Years of Expertise",
+        text: "Fill out all required fields using real data on the checkout page."
+      },
+      {
+        title: "Loyalty Program",
+        text: "While you were paying, we had already prepared access to our Member Area, where you can read more about the status of your order."
+      },
       {
         title: "24/7 Availability",
         text: "On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the."
