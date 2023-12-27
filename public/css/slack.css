@@ -351,14 +351,14 @@ adaptive;
   }
 
   .slack_section_cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    /* justify-content:space-between;*/
+    display: flex;
+   /* flex-direction: column;*/
+
     gap: 75px;
 
   }
 
-  /*.slack_card {
+  .slack_card {
     display: flex;
     flex-direction: column;
     max-width: 285px;
@@ -366,9 +366,9 @@ adaptive;
     height: 420px;
     box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
     gap: var(--spacing-1);
-    
-  }*/
-  .slack_card {
+  }
+
+  /*.slack_card {
     display: grid;
     grid-template-rows: 2fr 2fr;
      max-width: 285px;
@@ -377,10 +377,17 @@ adaptive;
     height:100%;
     box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.10);
 
+  }*/
+  .slack_card_image{
+    padding:0;
   }
 
-  .slack_card_body {
+  .slack_card_body {  
+    flex-direction:column;
+    justify-content:space-between;    
     padding: 12px;
+    gap:24px;
+    height:100%;
   }
 
   .slack_card_label {
@@ -392,19 +399,13 @@ adaptive;
 
   }
 
-  .slack_card_body {
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    gap: 16px;
-
-  }
+ 
 
   .slack_card_footer {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    /*color:#1264A3;*/
-
+    
+   justify-content: space-between;    
+   align-items:flex-end;
   }
 
   .learn_more {
@@ -412,6 +413,7 @@ adaptive;
     font-size: 14px;
     text-transform: uppercase;
     color: #1264A3;
+    
 
   }
 
@@ -440,22 +442,24 @@ adaptive;
       left: 518px;
       height: 300px;
     }
+    .slack_section_cards{
+      gap:50px;
+    }
 
-    .slack_section_cards {
-      display: grid;
+    /*.slack_section_cards {
+       display: grid;
       grid-template-rows: repeat(3, 1fr);
-      flex-wrap:wrap;
+      flex-wrap:wrap;*/
 
     }
 
-    .slack_card {
-      display: grid;
-      grid-template-columns: 2fr 3fr;
-      /*max-width: 285px;*/
+    /*.slack_card {
+      display: flex;
+   justify-content:space-between;
       width: 100%;
       max-height: 210px;
-      height:100%;
-    }
+      height: 100%;
+    }*/
   }
 
   @media all and (width < 1000px) {
