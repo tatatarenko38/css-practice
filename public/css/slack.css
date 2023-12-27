@@ -382,10 +382,12 @@ adaptive;
     padding:0;
   }
 
-  .slack_card_body {   
-   
+  .slack_card_body {  
+    flex-direction:column;
+    justify-content:space-between;    
     padding: 12px;
     gap:24px;
+    height:100%;
   }
 
   .slack_card_label {
@@ -400,7 +402,8 @@ adaptive;
  
 
   .slack_card_footer {
-    display: flex;   
+    display: flex;
+    
    justify-content: space-between;    
    align-items:flex-end;
   }
